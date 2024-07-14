@@ -66,6 +66,7 @@ const signup = async(req, res) => {
         console.log('--------------------');
         const cres = await uploadOnCloudinary(localpath);
         const user = new User({ name: named.toUpperCase(), username: email, password: password2, avatar: cres.url });
+        console.log(cres.url);
         await user.save();
         res.status(201).json({ status: true, user });
     } catch (error) {
