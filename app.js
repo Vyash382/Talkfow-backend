@@ -17,7 +17,7 @@ const userSocketIds = new Map();
 const app = express();
 const server = createServer(app);
 const io = new Server(server,{ cors : {
-  origin:   [ 'http://localhost:5173', 'http://localhost:5174'], 
+  origin:   [ 'https://talkfow.netlify.app', 'http://localhost:5174'], 
   credentials: true
 }});
 app.use(cookieParser());
