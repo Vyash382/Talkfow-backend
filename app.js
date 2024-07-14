@@ -22,7 +22,7 @@ const io = new Server(server,{ cors : {
 }});
 app.use(cookieParser());
 app.use(cors({
-  origin:   [ 'http://localhost:5173', 'http://localhost:5174'], 
+  origin:   [ 'https://talkfow.netlify.app', 'http://localhost:5174'], 
   credentials: true
 }));
 const MONGO_URI = 'mongodb+srv://vyash382:yash1234@cluster0.yvez4if.mongodb.net/Talkfow';
