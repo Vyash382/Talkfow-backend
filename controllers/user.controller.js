@@ -1,5 +1,5 @@
 import { uploadOnCloudinary } from "../uploads/cloudinary.js";
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { User } from "../models/user.model.js";
 const generateAccessToken = async function(id) {
